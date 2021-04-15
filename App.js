@@ -9,6 +9,7 @@ export class App extends Component {
 
   ifScanned = e => {
     Linking.openURL(e.data).catch(err => Alert.alert("Invalid QR Code", e.data));
+    console.log(e.data)
   }
   render() {
     return (
